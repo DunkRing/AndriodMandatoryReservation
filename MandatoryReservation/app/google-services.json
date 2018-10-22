@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "881784648156",
+    "firebase_url": "https://reservationservicechristoffer.firebaseio.com",
+    "project_id": "reservationservicechristoffer",
+    "storage_bucket": "reservationservicechristoffer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881784648156:android:98bbaf3f09abe7d2",
+        "android_client_info": {
+          "package_name": "com.example.bruger.mandatoryreservation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881784648156-mqjvonefe0ckls8b507egclcbq1uplp8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bruger.mandatoryreservation",
+            "certificate_hash": "d1f39a4fb5808c90b20e980c52d052911d283379"
+          }
+        },
+        {
+          "client_id": "881784648156-puk6mgtmdh78fmf7ljjkoii8tludtavm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATZ1c7OAj7FKTMJkZLAZoulRemALZoQFY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881784648156-puk6mgtmdh78fmf7ljjkoii8tludtavm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
