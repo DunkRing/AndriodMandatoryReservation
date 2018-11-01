@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:text="Signup" />
+            android:text="Sign in" />
 
         <TextView
             android:text="Already Registered? Signin Here"
