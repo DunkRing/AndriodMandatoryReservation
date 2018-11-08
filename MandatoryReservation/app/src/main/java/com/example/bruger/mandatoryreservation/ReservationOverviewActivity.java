@@ -44,10 +44,6 @@ public class ReservationOverviewActivity extends AppCompatActivity {
         okHttpHandler.execute(uri);
     }
 
-    public void addReservationButtonClicked(View view) {
-        Intent intent = new Intent(this, AddReservationActivity.class);
-        startActivity(intent);
-    }
 
     private class GetReservationsTask extends AsyncTask<String, Void, String> {
         @Override

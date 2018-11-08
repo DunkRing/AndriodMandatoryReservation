@@ -37,6 +37,8 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             startActivity(new Intent(this, LoginActivity.class));
         }
 
+
+
         //getting current user
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
@@ -62,5 +64,15 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             //starting login activity
             startActivity(new Intent(this, LoginActivity.class));
         }
+    }
+
+    public void addReservationButtonClicked(View view) {
+            Intent intent = new Intent(this, AddReservationActivity.class);
+            startActivity(intent);
+    }
+
+    public void allReservationsButtonClicked(View view) {
+        Intent intent = new Intent(this, ReservationOverviewActivity.class);
+        startActivity(intent);
     }
 }

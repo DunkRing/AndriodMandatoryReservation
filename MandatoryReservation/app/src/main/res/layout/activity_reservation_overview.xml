@@ -13,11 +13,6 @@
         android:text="Reservations"
         android:textStyle="bold" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="addReservationButtonClicked"
-        android:text="Add Reservation" />
 
     <TextView
         android:id="@+id/main_message_textview"

@@ -3,7 +3,7 @@ package com.example.bruger.mandatoryreservation;
 import java.io.Serializable;
 
 public class Reservation implements Serializable {
-    private int id;
+    private String id;
     private int roomId;
     private String userId;
     private String fromTimeString;
@@ -12,12 +12,8 @@ public class Reservation implements Serializable {
 
     public Reservation() {}
 
-    public int getId() {
+    public String getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public int getRoomId() {
