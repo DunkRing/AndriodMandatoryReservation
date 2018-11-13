@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -19,6 +20,8 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     private TextView textViewUserEmail;
     private Button buttonLogout;
 
+    //toolbar
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +47,13 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
         //initializing views
         textViewUserEmail = (TextView) findViewById(R.id.textViewUserEmail);
-        buttonLogout = (Button) findViewById(R.id.buttonLogout);
+
+
+
+        toolbar = findViewById(R.id.tool_bar);
+
+        toolbar.setTitle("Signed in as" + user.getEmail());
+        buttonLogout = findViewById(R.id.toolbarLogout);
 
         //displaying logged in user name
         textViewUserEmail.setText("Welcome "+user.getEmail());

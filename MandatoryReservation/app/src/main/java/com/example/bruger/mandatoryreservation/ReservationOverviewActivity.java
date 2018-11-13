@@ -26,7 +26,7 @@ import okhttp3.Response;
 public class ReservationOverviewActivity extends AppCompatActivity {
 
     private TextView messageView;
-    private static final String uri = "https://anbo-roomreservation.azurewebsites.net/api/reservations/room/1"; //"https://reqres.in/api/users/2";
+    private static final String uri = "https://anbo-roomreservation.azurewebsites.net/api/reservations/"; //"https://reqres.in/api/users/2";
 
 
     @Override

@@ -58,7 +58,7 @@ public class Reservation implements Serializable {
 
     @Override
     public String toString() {
-        return fromTimeString + " - " + toTimeString + " " + getPurpose();
+        return getRoomId() + " - " + fromTimeString + " - " + toTimeString + " " + getPurpose();
 
     }
 }

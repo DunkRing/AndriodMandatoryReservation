@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -68,7 +69,6 @@ public class AddReservationActivity extends AppCompatActivity {
         protected String doInBackground(String... strings) {
             String uri = strings[0];
             String jsonString = strings[1];
-            MediaType JSON_MEDIA_TYPE = MediaType.parse("applicaation/json");
             OkHttpClient client = new OkHttpClient();
             RequestBody body = RequestBody.create(JSON_MEDIA_TYPE, jsonString);
             Request request = new Request.Builder()
@@ -86,8 +86,9 @@ public class AddReservationActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String s) {
+            Toast.makeText(getBaseContext(), "Reservation added",Toast.LENGTH_LONG).show();
             Log.d(CommonStuff.TAG, "Reservation added");
-            finish();
+            done();
         }
 
         @Override
