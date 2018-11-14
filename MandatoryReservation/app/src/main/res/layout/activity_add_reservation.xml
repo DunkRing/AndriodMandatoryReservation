@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:text="Add reservation"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:editable="false"
+        />
 
     <EditText
         android:id="@+id/addReservation_userId_edittext"

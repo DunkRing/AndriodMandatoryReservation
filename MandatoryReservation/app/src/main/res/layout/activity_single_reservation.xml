@@ -26,4 +26,12 @@
         android:layout_height="wrap_content"
         android:text="Purpose" />
 
+    <Button
+        android:id="@+id/deleteButtonID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="deleteReservationOnCLick"
+        android:text="Delete Reservation"
+        android:visibility="gone"
+        />
 </LinearLayout>

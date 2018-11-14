@@ -20,13 +20,25 @@ import okhttp3.RequestBody;
 import okhttp3.Request;
 import okhttp3.Response;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class AddReservationActivity extends AppCompatActivity {
     private static final MediaType JSON_MEDIA_TYPE = MediaType.parse("application/json; charset=utf-8");
+
+    private FirebaseAuth firebaseAuth;
+    private TextView textViewUserid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_reservation);
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        textViewUserid = findViewById(R.id.addReservation_userId_edittext);
+
+        FirebaseUser user = firebaseAuth.getCurrentUser();
+        textViewUserid.setText(user.getEmail());
     }
 
     public void addReservationButtonClicked(View view) {
